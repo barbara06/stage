@@ -7,6 +7,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* blocco menu comune a tutti */
 .blocco_menu {
     background-color: forestgreen;
     text-align: center;
@@ -21,6 +22,7 @@ nav .menu_items, .menu_items li {
     padding-bottom: 15px;
     margin: 0;
     display:inline-block;
+    vertical-align: middle;
 }
 
 .menu_items li a {
@@ -31,6 +33,32 @@ nav .menu_items, .menu_items li {
 
 .menu_items a:hover {
     color: #00d2b5;
+}
+
+.menu_items img {
+    width: 20%;
+}
+
+/* blocco footer comune a tutti */
+footer {
+    background-color: forestgreen;
+}
+
+
+
+
+/* scheda home */
+/* blocco banner home */
+.banner_home h1 {
+    margin: 0px;
+    background-image: url('../img/banner/home.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #FFFFFF;
+    font-size: 140%;
+    font-weight: normal;
+    line-height: 220px;
+    padding-left: 5%;
 }
 
 .button {
@@ -73,10 +101,79 @@ nav .menu_items, .menu_items li {
     display: none;
 }
 
-.banner img {
-    width: 1903px;
-    height: 220px;
-    
+/* scheda corsi */
+/* blocco banner corsi */
+.banner_corsi h1 {
+    margin: 0px;
+    background-image: url('../img/banner/corsi.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #FFFFFF;
+    background-color: darkblue;
+    font-size: 140%;
+    font-weight: normal;
+    line-height: 220px;
+    padding-left: 5%;
 }
 
+/* scheda docenti */
+/* blocco banner docenti */
+.banner_docenti h1 {
+    margin: 0px;
+    background-image: url('../img/banner/docenti.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #FFFFFF;
+    background-color: darkblue;
+    font-size: 140%;
+    font-weight: normal;
+    line-height: 220px;
+    padding-left: 5%;
+}
+
+/* scheda chi siamo */
+/* blocco banner chi siamo */
+.banner_chi_siamo h1 {
+    margin: 0px;
+    background-image: url('../img/banner/chi_siamo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #FFFFFF;
+    background-color: darkblue;
+    font-size: 140%;
+    font-weight: normal;
+    line-height: 220px;
+    padding-left: 5%;
+}
+
+/* scheda dicono di noi */
+/* blocco banner dicono di noi */
+.banner_dicono h1 {
+    margin: 0px;
+    background-image: url('../img/banner/dicono.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #FFFFFF;
+    background-color: darkblue;
+    font-size: 140%;
+    font-weight: normal;
+    line-height: 220px;
+    padding-left: 5%;
+}
+
+/* scheda contattaci */
+/* blocco banner contattaci */
+.banner_contattaci h1 {
+    margin: 0px;
+    background-image: url('../img/banner/contattaci.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #FFFFFF;
+    background-color: darkblue;
+    font-size: 140%;
+    font-weight: normal;
+    line-height: 220px;
+    padding-left: 5%;
+
+}
 
