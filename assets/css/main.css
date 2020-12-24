@@ -42,6 +42,7 @@ nav .menu_items, .menu_items li {
 /* blocco footer comune a tutti */
 footer {
     background-color: forestgreen;
+    text-align: left;
 }
 
 
