@@ -1,6 +1,6 @@
 /* Scheda docenti */
-let elenco = "";
-fetch('https://raw.githubusercontent.com/barbara06/stage/main/docenti.json?token=AQACHKU54V2ZA67MCED3BAK77MOGG')
+let docenti = "";
+fetch('https://raw.githubusercontent.com/barbara06/stage/main/docenti.json')
     .then(
         function(response) {
             if (response.status !== 200) {
@@ -10,11 +10,25 @@ fetch('https://raw.githubusercontent.com/barbara06/stage/main/docenti.json?token
 
             // Examine the text in the response
             response.json().then(function(data) {
-                elenco = data.film;
-                creaLista(elenco);
+                docenti = data.docenti;
+                creaListaDocenti(docenti);
             });
         }
     )
+
+function creaListaDocenti(docenti) {
+    for (let i = 0; i < docenti.length; i++) {
+        let docente = '<div class="profilo_docente" onmouseover="mostraNome(' + i + ')" onmouseout="nascondiNome(' + i + ')" onclick="curriculumDocente(' + i + ')">' +
+        '<img id="img_docente' + i + '" class="img_docente" src="' + docenti[i].foto + '"alt="Foto docente">' +
+        '<p id="nome_docente' + i + '" class="nome_docente">' + docenti[i].nome + '</p></div>'; 
+        
+        $("#lista_docenti").append(docente);
+    }
+
+
+
+    
+}
 
 function mostraNome(id) {
     $("#img_docente" + id).hide();
