@@ -27,7 +27,7 @@
         </div>
         <!-- blocco contatti -->
         <div class="contact_us">
-            <form action="/action_page.php">
+            <form id="form_contatti" action="/action_page.php">
                 <div class="contact">
                     <label for="fname">First Name</label><br>
                     <input class="box_form" type="text" name="fname" required>
@@ -69,11 +69,13 @@
                 </div>
             </div>
             <p class="copyright">Copyright ©2020 Logo All rights reserved</p>
-            <form action="/action_page.php">
+            <form id="newsletter" action="/action_page.php">
                 <label for="email">Vuoi ricevere la nostra newsletter?</label><br>
                 <input class="box_form" type="email" name="email" required>
                 <button class="plane_button" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
             </form>              
         </footer>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </html>

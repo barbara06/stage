@@ -102,6 +102,11 @@ footer {
     display: none;
 }
 
+.partners img {
+    width: 200px;
+    background-color: white;
+}
+
 /* scheda corsi */
 /* blocco banner corsi */
 .banner_corsi h1 {
@@ -131,6 +136,30 @@ footer {
     line-height: 220px;
     padding-left: 5%;
 }
+
+.img_docente {
+    width: 200px;
+    height: 200px;
+}
+
+.nome_docente {
+    display: none;
+}
+
+.profilo_docente {
+    width: 200px;
+    height: 200px;
+}
+
+.curriculum_docente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+
 
 /* scheda chi siamo */
 /* blocco banner chi siamo */

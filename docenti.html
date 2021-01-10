@@ -25,11 +25,23 @@
         <div class="banner_docenti">
             <h1>I nostri docenti</h1>
         </div>
-        <div>
-            <p><img src="assets/img/" alt="Immagine insegnante 1">Insegnante 1</p>
-            <p><img src="assets/img/" alt="Immagine insegnante 2">Insegnante 2</p>
-            <p><img src="assets/img/" alt="Immagine insegnante 3">Insegnante 3</p> 
+        <div id="lista_docenti">
+        <!-- blocco profilo docenti (le foto di tutti i docenti, cliccando su una si apre un pop up con il curriculum e la foto) -->
+            <div class="profilo_docente" onmouseover="mostraNome(1)" onmouseout="nascondiNome(1)" onclick="curriculumDocente(1)">
+                <img id="img_docente1" class="img_docente" src="assets/img/insegnanti/1_volto.jpg" alt="Foto docente">
+                <p id="nome_docente1" class="nome_docente">Geppetto</p>
+            </div>
         </div>
+
+
+
+            <div id="curriculum_docente" class="curriculum_docente">
+                <img id="curriculum_img">
+                <h1 id="curriculum_nome"></h1>
+                <p id="curriculum_corpo"></p>
+                <button onclick="nascondiCurriculumDocente()">X</button>
+            </div>
+
         <!-- blocco footer -->
         <footer>
             <div id="blocco_footer">
@@ -51,4 +63,6 @@
             </form>              
         </footer>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </html>
