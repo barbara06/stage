@@ -1,7 +1,7 @@
 {
     "corsi": [
         {
-            "immagine": "assets/img/corsi/access-logo.png",
+            "immagine": "https://raw.githubusercontent.com/barbara06/stage/main/assets/img/corsi/access-logo.png",
             "titolo": "Access 2020",
             "livello": "Base / Intermedio / Avanzato",
             "obiettivi": "Cupcake ipsum dolor sit amet cake cheesecake soufflé. Ice cream chupa chups marshmallow topping. Sugar plum tootsie roll pudding bear claw I love sesame snaps topping jelly beans oat cake. Dragée cotton candy marshmallow dragée. Fruitcake danish topping I love. Danish ice cream lemon drops liquorice",
