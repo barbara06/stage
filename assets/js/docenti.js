@@ -40,7 +40,7 @@ function curriculumDocente(id) {
     $("#curriculum_img").attr('src', docenti[id].foto);
     $("#curriculum_nome").text(docenti[id].nome);
     $("#curriculum_corpo").html(docenti[id].curriculum);
-    $("#curriculum_info").text(docenti[id].info);
+    $("#curriculum_contatto").text(docenti[id].contatto);
     $("#curriculum_docente").show();
 }
 
