@@ -25,19 +25,24 @@
         <div class="banner_corsi">
             <h1>I nostri corsi</h1>
         </div>
-        <!-- blocco schede corsi (le anteprime di tutti i corsi presenti sul sito, cliccando su uno si apre una nuova scheda con tutti i dettagli) -->
-        <div class="scheda_corso">
-            <img src="assets/img/corsi/access-logo.png" alt="Immagine corso">
-            <div class="info_corso">
-                <h2>Access 2020</h2>
-                <p>(Obiettivi del json) Cupcake ipsum dolor sit amet cake cheesecake soufflé. Ice cream chupa chups marshmallow topping. Sugar plum tootsie roll pudding bear claw I love sesame snaps topping jelly beans oat cake. Dragée cotton candy marshmallow dragée. Fruitcake danish topping I love. Danish ice cream lemon drops liquorice</p>
-            </div>
-            <ul class="specifiche_corso">
-                <li>Gratis / € 500 + IVA</li>
-                <li><i class="fa fa-user" aria-hidden="true"></i>Destinatari</li>
-                <li><i class="fa fa-line-chart" aria-hidden="true"></i>Livello</li>
-                <li><i class="fa fa-desktop" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i>Modalità di svolgimento</li>
-            </ul>
+        <!-- blocco anteprime corsi (le anteprime di tutti i corsi presenti sul sito, cliccando su uno si apre una nuova scheda con tutti i dettagli) -->
+        <div class="lista_corsi">            
+        </div>
+        <!-- blocco corso -->
+        <div id="info_corso" class="info_corso">
+            <h1 id="corso_titolo"></h1>
+            <p id="corso_livello"></p>
+            <p id="corso_obiettivi"></p>
+            <p id="corso_durata"></p>
+            <p id="corso_inizio"></p>
+            <p id="corso_modalità"></p>
+            <p id="corso_calendario"></p>
+            <p id="corso_destinatari"></p>
+            <p id="corso_programma"></p>
+            <p id="corso_docenti"></p>
+            <p id="corso_attestato"></p>
+            <p id="corso_quota"></p>
+            <button onclick="nascondiInfoCorso()">X</button>
         </div>
         <!-- blocco footer -->
         <footer>
@@ -61,4 +66,7 @@
         </footer>              
         </footer>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/corsi.js"></script>
 </html>
