@@ -22,12 +22,20 @@ function creaListaCorsi(corsi) {
                         '<img id="img_corso' + i + '" class="img_corso" src="' + corsi[i].immagine + '"alt="Immagine corso">' +
                         '<div class="info_corso">' +
                             '<h2 class="titolo_corso">' + corsi[i].titolo + '</h2>' +
-                            '<p>' + corsi[i].obiettivi + '</p></div>' +
+                            '<p>' + corsi[i].obiettivi + '</p>' +
+                        '</div>' +
                             '<ul class="specifiche_corso">' +
                                 '<li>' + corsi[i].quota + '</li>' +
                                 '<li><i class="fa fa-user" aria-hidden="true"></i>' + corsi[i].destinatari + '</li>' +
-                                '<li><i class="fa fa-line-chart" aria-hidden="true"></i>' + corsi[i].livello + '</li>' +
-                                '<li><i class="fa fa-desktop" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i>' + corsi[i].modalità + '</li></ul></div>';
+                                '<li><i class="fa fa-line-chart" aria-hidden="true"></i>' + corsi[i].livello + '</li>';
+
+        if (corsi[i].modalita=="In presenza") {
+            corso=corso + '<li><i class="fa fa-users" aria-hidden="true"></i>' + corsi[i].modalita + '</li></ul>';
+        }
+        else {
+            corso=corso + '<li><i class="fa fa-desktop" aria-hidden="true"></i>' + corsi[i].modalita + '</li></ul>';
+        }
+        corso=corso + '</div>';
         
         $("#lista_corsi").append(corso);
     }   

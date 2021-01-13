@@ -122,6 +122,15 @@ footer {
     padding-left: 5%;
 }
 
+.info_corso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    background-color: chocolate;
+}
+
 /* scheda docenti */
 /* blocco banner docenti */
 .banner_docenti h1 {
