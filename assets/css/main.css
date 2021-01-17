@@ -86,7 +86,7 @@ footer {
     background-color: #f3f3f3;
 }
 
-#ricerca_news {
+#ricerca_corsi {
     padding: 15px;
     border: none;
     background-color: #f3f3f3;
@@ -94,7 +94,7 @@ footer {
     margin-top: 45px;
 }
 
-#ricerca_news:focus {
+#ricerca_corsi:focus {
     outline: none;
 }
 

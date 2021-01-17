@@ -10,7 +10,15 @@ fetch('https://raw.githubusercontent.com/barbara06/stage/main/corsi.json')
 
             // Examine the text in the response
             response.json().then(function(data) {
+
+                let parametri=parametriRicerca();
+                parametri=parametri["ricerca"];
                 corsi = data.corsi;
+                
+                if (typeof parametri != 'undefined' || parametri != '') {
+                    corsi = filtroRicerca(corsi, parametri);
+                }
+
                 creaListaCorsi(corsi);
             });
         }
@@ -61,4 +69,30 @@ function infoCorso(id) {
 function nascondiInfoCorso() {
     $("#info_corso").hide();
 
+}
+
+function parametriRicerca() {
+    let vars = [], hash;
+            let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(let i = 0; i < hashes.length; i++)
+            {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+}
+
+function filtroRicerca(lista, filtro) {
+    let array = [];
+
+    for (let i = 0; i < lista.length; i++) {
+        
+        if (lista[i].tag.includes(filtro)) {
+            array.push(lista[i]);
+
+        }      
+    }
+
+    return array;
 }
