@@ -16,7 +16,6 @@ fetch('https://raw.githubusercontent.com/barbara06/stage/main/corsi.json')
                 corsi = data.corsi;
                 
                 if (typeof parametri != 'undefined' && parametri != '') {
-                    console.log(parametri);
                     corsi = filtroRicerca(corsi, parametri);
                 }
 
@@ -26,6 +25,14 @@ fetch('https://raw.githubusercontent.com/barbara06/stage/main/corsi.json')
     )
 
 function creaListaCorsi(corsi) {
+
+    if (corsi.length == 0) {
+        
+        $("#lista_corsi").append('<div class="vuoto">Nessun corso trovato</div>');
+
+        return false;
+    }
+
     for (let i = 0; i < corsi.length; i++) {
         let corso = '<div class="anteprima_corso" onclick="infoCorso(' + i + ')">' +
                         '<img id="img_corso' + i + '" class="img_corso" src="' + corsi[i].immagine + '"alt="Immagine corso">' +
@@ -38,13 +45,13 @@ function creaListaCorsi(corsi) {
                                 '<li><i class="fa fa-user" aria-hidden="true"></i> ' + corsi[i].destinatari + '</li>' +
                                 '<li><i class="fa fa-line-chart" aria-hidden="true"></i> ' + corsi[i].livello + '</li>';
 
-        if (corsi[i].modalita=="In presenza") {
-            corso=corso + '<li><i class="fa fa-users" aria-hidden="true"></i> ' + corsi[i].modalita + '</li></ul>';
+        if (corsi[i].modalita == "In presenza") {
+            corso = corso + '<li><i class="fa fa-users" aria-hidden="true"></i> ' + corsi[i].modalita + '</li></ul>';
         }
         else {
-            corso=corso + '<li><i class="fa fa-desktop" aria-hidden="true"></i> ' + corsi[i].modalita + '</li></ul>';
+            corso = corso + '<li><i class="fa fa-desktop" aria-hidden="true"></i> ' + corsi[i].modalita + '</li></ul>';
         }
-        corso=corso + '</div>';
+        corso = corso + '</div>';
         
         $("#lista_corsi").append(corso);
     }   
@@ -89,7 +96,7 @@ function filtroRicerca(lista, filtro) {
 
     for (let i = 0; i < lista.length; i++) {
         
-        if (lista[i].tag.includes(filtro)) {
+        if (lista[i].tag.toLowerCase().includes(filtro.toLowerCase())) {
             array.push(lista[i]);
 
         }      
