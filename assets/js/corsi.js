@@ -11,11 +11,12 @@ fetch('https://raw.githubusercontent.com/barbara06/stage/main/corsi.json')
             // Examine the text in the response
             response.json().then(function(data) {
 
-                let parametri=parametriRicerca();
+                let parametri = parametriRicerca();
                 parametri=parametri["ricerca"];
                 corsi = data.corsi;
                 
-                if (typeof parametri != 'undefined' || parametri != '') {
+                if (typeof parametri != 'undefined' && parametri != '') {
+                    console.log(parametri);
                     corsi = filtroRicerca(corsi, parametri);
                 }
 
