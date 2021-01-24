@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="keyword" content="News, Blog, Marketing, Tecnologia">
         <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/chi_siamo.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,11 +28,154 @@
         </div>
         <p>Scrivere la storia</p>
         <p>Clicca sulle foto per sfogliare la gallery</p>
-        <div>
-            <img src="assets/img/" alt="Immagine aula 1">
-            <img src="assets/img/" alt="Immagine aula 2">
-            <img src="assets/img/" alt="Immagine aula 3">  
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="assets/img/aule/aula1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula12.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula13.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula14.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="assets/img/aule/aula15.png" onclick="openModal();currentSlide(15)" class="hover-shadow">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">        
+        <img src="assets/img/aule/aula1.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <img src="assets/img/aule/aula2.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <img src="assets/img/aule/aula3.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <img src="assets/img/aule/aula4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula8.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula9.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula10.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula11.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula12.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula13.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula14.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="assets/img/aule/aula15.png" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      
+  
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
         <!-- blocco footer -->
         <footer>
             <div id="blocco_footer">
@@ -55,4 +199,5 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/chi_siamo.js"></script>
 </html>
