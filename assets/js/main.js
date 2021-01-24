@@ -8,3 +8,4 @@ $("#form_contatti").submit(function(event){
     event.preventDefault();
     alert("Submitted");
   });
+

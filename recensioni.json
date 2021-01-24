@@ -1,0 +1,38 @@
+{
+    "recensioni": [
+        {
+            "nome": "Mario Rossi",
+            "data": "21 Gennaio 2021",
+            "corso": "Javascript",
+            "recensione": "Cheesecake chocolate bar marzipan bear claw. Icing pudding cupcake brownie cheesecake sesame snaps. Sesame snaps ice cream cupcake marzipan. Pudding cupcake chupa chups pudding liquorice pie ice cream pie. Bonbon topping cake gingerbread apple pie. Tart donut candy icing."
+        },
+
+        {
+            "nome": "Bianca Vivaldi",
+            "data": "15 Dicembre 2020",
+            "corso": "Access",
+            "recensione": "Cheesecake chocolate bar marzipan bear claw. Icing pudding cupcake brownie cheesecake sesame snaps. Sesame snaps ice cream cupcake marzipan. Pudding cupcake chupa chups pudding liquorice pie ice cream pie. Bonbon topping cake gingerbread apple pie. Tart donut candy icing."
+        },
+
+        {
+            "nome": "Azzurra Paganini",
+            "data": "10 Settembre 2020",
+            "corso": "HTML",
+            "recensione": "Cheesecake chocolate bar marzipan bear claw. Icing pudding cupcake brownie cheesecake sesame snaps. Sesame snaps ice cream cupcake marzipan. Pudding cupcake chupa chups pudding liquorice pie ice cream pie. Bonbon topping cake gingerbread apple pie. Tart donut candy icing."
+        },
+
+        {
+            "nome": "Luigi Bianchi",
+            "data": "14 Aprile 2020",
+            "corso": "CSS",
+            "recensione": "Cheesecake chocolate bar marzipan bear claw. Icing pudding cupcake brownie cheesecake sesame snaps. Sesame snaps ice cream cupcake marzipan. Pudding cupcake chupa chups pudding liquorice pie ice cream pie. Bonbon topping cake gingerbread apple pie. Tart donut candy icing."
+        },
+
+        {
+            "nome": "Luca Verdi",
+            "data": "27 Febbraio 2020",
+            "corso": "jQuery",
+            "recensione": "Cheesecake chocolate bar marzipan bear claw. Icing pudding cupcake brownie cheesecake sesame snaps. Sesame snaps ice cream cupcake marzipan. Pudding cupcake chupa chups pudding liquorice pie ice cream pie. Bonbon topping cake gingerbread apple pie. Tart donut candy icing."
+        }
+    ]
+}

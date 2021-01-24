@@ -19,8 +19,8 @@ fetch('https://raw.githubusercontent.com/barbara06/stage/main/docenti.json')
 function creaListaDocenti(docenti) {
     for (let i = 0; i < docenti.length; i++) {
         let docente = '<div class="profilo_docente" onmouseover="mostraNome(' + i + ')" onmouseout="nascondiNome(' + i + ')" onclick="curriculumDocente(' + i + ')">' +
-        '<img id="img_docente' + i + '" class="img_docente" src="' + docenti[i].foto + '"alt="Foto docente">' +
-        '<p id="nome_docente' + i + '" class="nome_docente">' + docenti[i].nome + '</p></div>'; 
+                        '<img id="img_docente' + i + '" class="img_docente" src="' + docenti[i].foto + '"alt="Foto docente">' +
+                        '<p id="nome_docente' + i + '" class="nome_docente">' + docenti[i].nome + '</p></div>'; 
         
         $("#lista_docenti").append(docente);
     }   
