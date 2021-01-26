@@ -28,7 +28,7 @@ function creaListaCorsi(corsi) {
 
     if (corsi.length == 0) {
         
-        $("#lista_corsi").append('<div class="vuoto">Ooops! Nessun corso trovato!</div>');
+        $("#lista_corsi").append('<div class="vuoto"><i class="fa fa-frown-o" aria-hidden="true"></i><p>Ooops! Nessun corso trovato!</p></div>');
 
         return false;
     }
