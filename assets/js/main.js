@@ -38,24 +38,10 @@ function creaListaRandom(alternative) {
     }
 
     for (let i = 0; i < alternative.length; i++) {
-        let alternativa = '<div class="anteprima_corso">' +
-                        '<img id="img_corso' + i + '" class="img_corso" src="' + alternative[i].immagine + '"alt="Immagine corso">' +
-                        '<div class="info_corso">' +
-                            '<h2 class="titolo_corso">' + alternative[i].titolo + '</h2>' +
-                            '<p>' + alternative[i].obiettivi + '</p>' +
-                        '</div>' +
-                            '<ul class="specifiche_corso">' +
-                                '<li>' + alternative[i].quota + '</li>' +
-                                '<li><i class="fa fa-user" aria-hidden="true"></i> ' + alternative[i].destinatari + '</li>' +
-                                '<li><i class="fa fa-line-chart" aria-hidden="true"></i> ' + alternative[i].livello + '</li>';
-
-        if (alternative[i].modalita == "In presenza") {
-            alternativa = alternativa + '<li><i class="fa fa-users" aria-hidden="true"></i> ' + alternative[i].modalita + '</li></ul>';
-        }
-        else {
-            alternativa = alternativa + '<li><i class="fa fa-desktop" aria-hidden="true"></i> ' + alternative[i].modalita + '</li></ul>';
-        }
-        alternativa = alternativa + '</div>';
+        let alternativa = '<div class="anteprima_random">' +
+                            '<img id="img_random' + i + '" class="img_random" src="' + alternative[i].immagine + '"alt="Immagine corso">' +                      
+                            '<p>' + alternative[i].titolo + '</p></div>';
+                                
         
         $("#lista_random").append(alternativa);
     }   

@@ -7,6 +7,21 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.corpo {
+    padding-left: 15% ;
+    padding-right: 15%;
+}
+
+.corpo h2 {
+    text-align: center;
+    padding: 3%;
+}
+
+
+
+
+
+
 /* blocco menu comune a tutti */
 .blocco_menu {
     background-color: forestgreen;
@@ -42,9 +57,30 @@ nav .menu_items, .menu_items li {
 /* blocco footer comune a tutti */
 footer {
     background-color: forestgreen;
-    text-align: left;
+    padding-left: 6%;
+    padding-top: 1%;
+    display: flex;
 }
 
+#blocco_footer img {
+    width: 9%;
+    
+}
+
+.copyright {
+    margin-top: 7%;
+    padding-left: 9%;
+}
+
+footer form {
+    text-align: center;
+    padding-top: 3%;
+    padding-left: 15%;
+}
+
+.box_form {    
+    margin-top: 5%;
+}
 
 
 
@@ -62,11 +98,33 @@ footer {
     padding-left: 5%;
 }
 
+/* blocco corsi random */
+#lista_random {
+    display: flex;
+    padding-left: 18%;
+}
+
+.anteprima_random {
+    padding-inline-start: 4%;
+    padding-inline-end: 4%;
+    text-align: center;
+}
+
+.anteprima_random p {
+    text-align: center;
+}
+/* blocco ricerca corsi */
+.blocco_ricerca {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
 .button {
     text-decoration: none;
-    border: 2px solid #00d2b5;
-    border-radius: 22px;
-    background-color: #00d2b5;
+    border: 2px solid darkgreen;
+    border-radius: 15px;
+    background-color: darkgreen;
     color: white;
     padding: 10px;
     position: relative;
@@ -74,10 +132,10 @@ footer {
 }
 
 .button:hover {
-    border: 2px solid #00d2b5;
-    border-radius: 22px;
+    border: 2px solid darkgreen;
+    border-radius: 15px;
     background-color: white;
-    color: #00d2b5;
+    color: darkgreen;
 }
 
 .blocco_ricerca .fa {
@@ -91,7 +149,7 @@ footer {
     border: none;
     background-color: #f3f3f3;
     width: 30%;
-    margin-top: 45px;
+    margin-top: 80px;
 }
 
 #ricerca_corsi:focus {
@@ -102,9 +160,28 @@ footer {
     display: none;
 }
 
+.search_button {
+    border: none;
+    background-color: #f3f3f3;
+}
+
+/* blocco aziende partner */
+.aziende {
+    text-align: center;
+}
+
+.partners {
+    display: flex;
+    padding: 1%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .partners img {
     width: 200px;
     background-color: white;
+    padding: 2%;
 }
 
 /* scheda corsi */
@@ -122,13 +199,56 @@ footer {
     padding-left: 5%;
 }
 
+.corpo_corsi {
+    padding-left: 30% ;
+    padding-right: 30%;
+}
+
+/* blocco anteprima corso */
+#lista_corsi {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.anteprima_corso {
+    display: flex;
+    padding: 10px;
+    border: 2px solid darkgreen;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.specifiche_corso li {
+    list-style: none;
+    padding-top: 15%;
+}
+
+
+
+
+/* blocco scheda corso */
 .info_corso {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    left: 20%;
+    right: 20%;
     z-index: 2;
     display: none;
-    background-color: chocolate;
+    padding: 15px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    font-size: 15px;
+}
+
+.x_button { /* valido sia per la scheda corsi che per la scheda docenti */
+    position: absolute;
+    right: 15px;
+    border: none;
+    background-color: #cae8ca;
+    font-size: 30px;
+    color: #4CAF50;
 }
 
 /* scheda docenti */
@@ -146,27 +266,58 @@ footer {
     padding-left: 5%;
 }
 
+#lista_docenti {
+    display:flex;
+    padding:10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
 .img_docente {
     width: 200px;
-    height: 200px;
+    height: 200px;   
 }
 
 .nome_docente {
     display: none;
+    width: 200px;
+    height: 93px;
+    text-align: center;
+    padding-top: 23%;
+    background-color: #4CAF50;
+    color: #cae8ca;
 }
 
 .profilo_docente {
     width: 200px;
     height: 200px;
+    display:flex;
+    padding:10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
 }
 
 .curriculum_docente {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    left: 20%;
+    right: 20%;
     z-index: 2;
     display: none;
-    background-color: chocolate;
+    padding: 15px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    font-size: 15px;
+}
+
+#curriculum_img {
+    width: 400px;
 }
 
 

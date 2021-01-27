@@ -37,8 +37,8 @@ function creaListaCorsi(corsi) {
         let corso = '<div class="anteprima_corso" onclick="infoCorso(' + i + ')">' +
                         '<img id="img_corso' + i + '" class="img_corso" src="' + corsi[i].immagine + '"alt="Immagine corso">' +
                         '<div class="info_corso">' +
-                            '<h2 class="titolo_corso">' + corsi[i].titolo + '</h2>' +
-                            '<p>' + corsi[i].obiettivi + '</p>' +
+                            '<h2 id="titolo_corso' + i + '" class="titolo_corso">' + corsi[i].titolo + '</h2>' +
+                            '<p id="obiettivi_corso' + i + '" class="obiettivi_corso">' + corsi[i].obiettivi + '</p>' +
                         '</div>' +
                             '<ul class="specifiche_corso">' +
                                 '<li>' + corsi[i].quota + '</li>' +
