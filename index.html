@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>InformaticAMO</title>
+        <title>Logo</title>
         <meta charset="UTF-8">
         <meta name="keyword" content="News, Blog, Marketing, Tecnologia">
         <link rel="stylesheet" href="assets/css/main.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
     </head>
     <body>
         <!-- blocco menu -->
@@ -28,7 +28,22 @@
         <div class="corpo">
             <h2>I Corsi più recenti</h2>        
             <div id="lista_random">
-            </div>        
+            </div>
+            <div id="info_corso" class="info_corso">
+                <button class="x_button" onclick="nascondiInfoRandom()">X</button>
+                <h1 id="corso_titolo"></h1>
+                <p><b>Livello</b><br><span id="corso_livello"></span></p>
+                <p><b>Obiettivi</b><br><span id="corso_obiettivi"></span></p>
+                <p><b>Durata</b><br><span id="corso_durata"></span></p>
+                <p><b>Data di inizio</b><br><span id="corso_inizio"></span></p>
+                <p><b>Modalità di svolgimento</b><br><span id="corso_modalità"></span></p>
+                <p><b>Calendario / Orario</b><br><span id="corso_calendario"></span></p>
+                <p><b>Destinatari</b><br><span id="corso_destinatari"></span></p>
+                <p><b>Programma</b><br><span id="corso_programma"></span></p>
+                <p><b>Docenti</b><br><span id="corso_docenti"></span></p>
+                <p><b>Tipo di attestato</b><br><span id="corso_attestato"></span></p>
+                <p><b>Quota di partecipazione</b><br><span id="corso_quota"></span></p>                
+            </div>       
             <!-- input ricerca -->
             <div class="blocco_ricerca">
                 <span><a class="button" href="corsi.html">Scopri tutti i Corsi</a></span>
@@ -69,9 +84,9 @@
                 </div>
             </div>
             <p class="copyright">Copyright ©2020 Logo All rights reserved</p>
-            <form action="/action_page.php">
+            <form id="newsletter" action="/action_page.php">
                 <label for="email">Vuoi ricevere la nostra newsletter?</label><br>
-                <input class="box_form" type="email" name="email" required>
+                <input class="box_form mail" type="email" name="email" required>
                 <button class="plane_button" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
             </form>              
         </footer>

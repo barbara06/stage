@@ -12,6 +12,7 @@
   .column {
     float: left;
     width: 25%;
+    margin-bottom: 3%;
   }
   
   /* The Modal (background) */

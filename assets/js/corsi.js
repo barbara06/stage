@@ -28,7 +28,7 @@ function creaListaCorsi(corsi) {
 
     if (corsi.length == 0) {
         
-        $("#lista_corsi").append('<div class="vuoto"><i class="fa fa-frown-o" aria-hidden="true"></i><p>Ooops! Nessun corso trovato!</p></div>');
+        $("#lista_corsi").append('<div class="vuoto"><i class="fa fa-frown-o fa-5x" aria-hidden="true"></i><p>Ooops! Nessun corso trovato!</p></div>');
 
         return false;
     }
@@ -36,14 +36,14 @@ function creaListaCorsi(corsi) {
     for (let i = 0; i < corsi.length; i++) {
         let corso = '<div class="anteprima_corso" onclick="infoCorso(' + i + ')">' +
                         '<img id="img_corso' + i + '" class="img_corso" src="' + corsi[i].immagine + '"alt="Immagine corso">' +
-                        '<div class="info_corso">' +
+                        '<div class="contenuti_corso">' +
                             '<h2 id="titolo_corso' + i + '" class="titolo_corso">' + corsi[i].titolo + '</h2>' +
                             '<p id="obiettivi_corso' + i + '" class="obiettivi_corso">' + corsi[i].obiettivi + '</p>' +
                         '</div>' +
-                            '<ul class="specifiche_corso">' +
-                                '<li>' + corsi[i].quota + '</li>' +
-                                '<li><i class="fa fa-user" aria-hidden="true"></i> ' + corsi[i].destinatari + '</li>' +
-                                '<li><i class="fa fa-line-chart" aria-hidden="true"></i> ' + corsi[i].livello + '</li>';
+                        '<ul class="specifiche_corso">' +
+                            '<li>' + corsi[i].quota + '</li>' +
+                            '<li><i class="fa fa-user" aria-hidden="true"></i> ' + corsi[i].destinatari + '</li>' +
+                            '<li><i class="fa fa-line-chart" aria-hidden="true"></i> ' + corsi[i].livello + '</li>';
 
         if (corsi[i].modalita == "In presenza") {
             corso = corso + '<li><i class="fa fa-users" aria-hidden="true"></i> ' + corsi[i].modalita + '</li></ul>';
@@ -82,6 +82,8 @@ function nascondiInfoCorso() {
 function parametriRicerca() {
     let vars = [], hash;
             let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            /*console.log(hashes);
+            console.log(document.getElementById("ricerca_corsi").value);  nel caso di una single page application */
             for(let i = 0; i < hashes.length; i++)
             {
                 hash = hashes[i].split('=');

@@ -38,7 +38,7 @@ function creaListaRandom(alternative) {
     }
 
     for (let i = 0; i < alternative.length; i++) {
-        let alternativa = '<div class="anteprima_random">' +
+        let alternativa = '<div class="anteprima_random" onclick="infoRandom(' + i + ')">' +
                             '<img id="img_random' + i + '" class="img_random" src="' + alternative[i].immagine + '"alt="Immagine corso">' +                      
                             '<p>' + alternative[i].titolo + '</p></div>';
                                 
@@ -47,10 +47,26 @@ function creaListaRandom(alternative) {
     }   
 }
 
-    
+function infoRandom(id) {
+    $("#corso_titolo").text(alternative[id].titolo);
+    $("#corso_livello").text(alternative[id].livello);
+    $("#corso_obiettivi").text(alternative[id].obiettivi);
+    $("#corso_durata").text(alternative[id].durata);
+    $("#corso_inizio").text(alternative[id].inizio);
+    $("#corso_modalità").text(alternative[id].modalità);
+    $("#corso_calendario").text(alternative[id].calendario);
+    $("#corso_destinatari").text(alternative[id].destinatari); 
+    $("#corso_programma").html(alternative[id].programma);
+    $("#corso_docenti").text(alternative[id].docenti);
+    $("#corso_attestato").text(alternative[id].attestato);
+    $("#corso_quota").text(alternative[id].quota);
+    $("#info_corso").show();
+}
 
 
-
+function nascondiInfoRandom() {
+    $("#info_corso").hide();
+}
 
 
 

@@ -1,3 +1,5 @@
+/* @media only screen and (min-width: 1180px) {}  lo step successivo sarà rendere il sito responsive */
+
 * {
     box-sizing: border-box;
 }
@@ -17,14 +19,9 @@ body {
     padding: 3%;
 }
 
-
-
-
-
-
 /* blocco menu comune a tutti */
 .blocco_menu {
-    background-color: forestgreen;
+    background-color: #4CAF50;
     text-align: center;
     position: sticky;
     top: 0px;
@@ -47,7 +44,7 @@ nav .menu_items, .menu_items li {
 }
 
 .menu_items a:hover {
-    color: #00d2b5;
+    color: #cae8ca;
 }
 
 .menu_items img {
@@ -56,7 +53,7 @@ nav .menu_items, .menu_items li {
 
 /* blocco footer comune a tutti */
 footer {
-    background-color: forestgreen;
+    background-color: #4CAF50;
     padding-left: 6%;
     padding-top: 1%;
     display: flex;
@@ -78,7 +75,7 @@ footer form {
     padding-left: 15%;
 }
 
-.box_form {    
+.mail {    
     margin-top: 5%;
 }
 
@@ -108,6 +105,11 @@ footer form {
     padding-inline-start: 4%;
     padding-inline-end: 4%;
     text-align: center;
+}
+
+.anteprima_random:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .anteprima_random p {
@@ -184,6 +186,8 @@ footer form {
     padding: 2%;
 }
 
+
+
 /* scheda corsi */
 /* blocco banner corsi */
 .banner_corsi h1 {
@@ -192,19 +196,19 @@ footer form {
     background-repeat: no-repeat;
     background-size: 100%;
     color: #FFFFFF;
-    background-color: darkblue;
     font-size: 140%;
     font-weight: normal;
     line-height: 220px;
     padding-left: 5%;
 }
 
+
+/* blocco anteprima corso */
 .corpo_corsi {
     padding-left: 30% ;
     padding-right: 30%;
 }
 
-/* blocco anteprima corso */
 #lista_corsi {
     margin-top: 3%;
     margin-bottom: 3%;
@@ -214,10 +218,31 @@ footer form {
     display: flex;
     padding: 10px;
     border: 2px solid darkgreen;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 3%;
+}
+
+.anteprima_corso:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: #cae8ca;
+}
+
+.img_corso {
+    padding-left: 2%;
+}
+
+.contenuti_corso {
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 200%;
+}
+
+ul.specifiche_corso {
+    padding-left: 4%;
+    padding-right: 1%;
+    width: 100%;
 }
 
 .specifiche_corso li {
@@ -225,13 +250,16 @@ footer form {
     padding-top: 15%;
 }
 
-
-
+/* blocco scheda corso assente */
+.vuoto {
+    text-align: center;
+    margin: 15%;
+}
 
 /* blocco scheda corso */
 .info_corso {
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 20%;
     right: 20%;
     z-index: 2;
@@ -240,6 +268,8 @@ footer form {
     background-color: #cae8ca;
     border: 2px solid #4CAF50;
     font-size: 15px;
+    overflow-y: scroll;
+    height: 80%;
 }
 
 .x_button { /* valido sia per la scheda corsi che per la scheda docenti */
@@ -251,6 +281,8 @@ footer form {
     color: #4CAF50;
 }
 
+
+
 /* scheda docenti */
 /* blocco banner docenti */
 .banner_docenti h1 {
@@ -259,7 +291,6 @@ footer form {
     background-repeat: no-repeat;
     background-size: 100%;
     color: #FFFFFF;
-    background-color: darkblue;
     font-size: 140%;
     font-weight: normal;
     line-height: 220px;
@@ -276,6 +307,8 @@ footer form {
     margin-bottom: 8%;
     margin-top: 5%;
 }
+
+
 
 .img_docente {
     width: 200px;
@@ -300,12 +333,14 @@ footer form {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    margin-right: 70px; 
+    margin-bottom: 40px; 
 }
 
 .curriculum_docente {
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 20%;
     right: 20%;
     z-index: 2;
@@ -314,6 +349,8 @@ footer form {
     background-color: #cae8ca;
     border: 2px solid #4CAF50;
     font-size: 15px;
+    overflow-y: scroll;
+    height: 80%;
 }
 
 #curriculum_img {
@@ -323,19 +360,23 @@ footer form {
 
 
 /* scheda chi siamo */
-/* blocco banner chi siamo */
+/* blocco banner chi siamo, tutto il resto è su chi_siamo.css */
 .banner_chi_siamo h1 {
     margin: 0px;
     background-image: url('../img/banner/chi_siamo.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     color: #FFFFFF;
-    background-color: darkblue;
     font-size: 140%;
     font-weight: normal;
     line-height: 220px;
     padding-left: 5%;
 }
+
+.gallery {
+    margin-bottom: 3%;
+}
+
 
 /* scheda dicono di noi */
 /* blocco banner dicono di noi */
@@ -345,12 +386,20 @@ footer form {
     background-repeat: no-repeat;
     background-size: 100%;
     color: #FFFFFF;
-    background-color: darkblue;
     font-size: 140%;
     font-weight: normal;
     line-height: 220px;
     padding-left: 5%;
 }
+
+#elenco_recensioni {
+    margin-bottom: 4%;
+}
+
+.commento {
+    margin-top: 4%;
+}
+
 
 /* scheda contattaci */
 /* blocco banner contattaci */
@@ -360,11 +409,50 @@ footer form {
     background-repeat: no-repeat;
     background-size: 100%;
     color: #FFFFFF;
-    background-color: darkblue;
     font-size: 140%;
     font-weight: normal;
     line-height: 220px;
     padding-left: 5%;
-
 }
+
+/* blocco contatti */
+.contattaci {
+    display: flex;
+    padding: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_us .contact {
+    padding-top: 3%;
+}
+
+textarea {
+    margin-top: 3%;
+}
+
+input#privacy {
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+input.send_button {
+    margin-top: 5%;
+}
+
+iframe {
+    margin-left: 4%;
+}
+
+.social-link {
+    margin-top: 3%;
+    width: 82%;
+}
+
+.icone {
+    margin-left: 3%;
+}
+
+
 

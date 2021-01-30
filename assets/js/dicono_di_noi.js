@@ -18,8 +18,8 @@ fetch('https://raw.githubusercontent.com/barbara06/stage/main/recensioni.json')
 
 function creaElencoRecensioni(recensioni) {
     for (let i = 0; i < recensioni.length; i++) {
-        let recensione = '<div class="recensione' + i + '">' +
-                          '<h2 id="nome_recensione' + i + '">' + recensioni[i].nome + '</h2>' +
+        let recensione = '<div class="commento recensione' + i + '">' +
+                          '<h3 id="nome_recensione' + i + '">' + recensioni[i].nome + '</h3>' +
                           '<p id="info_recensione' + i + '">' + recensioni[i].corso + ' | ' + recensioni[i].data + '</p>' +
                           '<p id="recensione' + i + '">' + recensioni[i].recensione + '</p></div>';
 
