@@ -70,15 +70,18 @@ function nascondiInfoRandom() {
 
 
 
+/* newsletter presente nel footer */
+$("#newsletter").submit(function(event){
+    event.preventDefault();
+    alert("Ora riceverai la nostra newsletter!");
+});
 
-/* Scheda contatti */
+
+/* form nella scheda contattaci */
 $("#form_contatti").submit(function(event){
     event.preventDefault();
-    alert("Submitted");
-  });
+    alert("Messaggio inviato!");
+});
 
-  $("#newsletter").submit(function(event){
-    event.preventDefault();
-    alert("Submitted");
-  });
+
 

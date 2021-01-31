@@ -28,6 +28,10 @@ body {
     z-index: 1;
 }
 
+.menu_items {
+    text-align: justify;
+}
+
 nav .menu_items, .menu_items li {
     list-style: none;
     padding:20px;
@@ -115,6 +119,7 @@ footer form {
 .anteprima_random p {
     text-align: center;
 }
+
 /* blocco ricerca corsi */
 .blocco_ricerca {
     text-align: center;
@@ -134,8 +139,6 @@ footer form {
 }
 
 .button:hover {
-    border: 2px solid darkgreen;
-    border-radius: 15px;
     background-color: white;
     color: darkgreen;
 }
@@ -256,7 +259,7 @@ ul.specifiche_corso {
     margin: 15%;
 }
 
-/* blocco scheda corso */
+/* blocco scheda corso, valido sia per la scheda corsi che per la scheda corsi random nella home */
 .info_corso {
     position: fixed;
     top: 10%;
@@ -272,7 +275,7 @@ ul.specifiche_corso {
     height: 80%;
 }
 
-.x_button { /* valido sia per la scheda corsi che per la scheda docenti */
+.x_button { /* valido per il button X presente nella scheda corsi, nella scheda docenti e nella scheda corsi random nella home*/
     position: absolute;
     right: 15px;
     border: none;
@@ -297,6 +300,7 @@ ul.specifiche_corso {
     padding-left: 5%;
 }
 
+/* blocco lista docenti */
 #lista_docenti {
     display:flex;
     padding:10px;
@@ -307,8 +311,6 @@ ul.specifiche_corso {
     margin-bottom: 8%;
     margin-top: 5%;
 }
-
-
 
 .img_docente {
     width: 200px;
@@ -338,6 +340,7 @@ ul.specifiche_corso {
     margin-bottom: 40px; 
 }
 
+/* blocco curriculum docente*/
 .curriculum_docente {
     position: fixed;
     top: 10%;
@@ -392,6 +395,7 @@ ul.specifiche_corso {
     padding-left: 5%;
 }
 
+/* blocco recensioni */
 #elenco_recensioni {
     margin-bottom: 4%;
 }
@@ -437,14 +441,30 @@ input#privacy {
     margin-bottom: 1%;
 }
 
-input.send_button {
-    margin-top: 5%;
+.send_button {
+    text-decoration: none;
+    border: 2px solid darkgreen;
+    border-radius: 15px;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    margin-top: 3%;
+    position: relative;
+    bottom: -15px;
 }
 
+.send_button:hover {
+    background-color: white;
+    color: darkgreen;
+}
+
+
+/* blocco iframe */
 iframe {
     margin-left: 4%;
 }
 
+/* blocco info generali */
 .social-link {
     margin-top: 3%;
     width: 82%;
@@ -453,6 +473,3 @@ iframe {
 .icone {
     margin-left: 3%;
 }
-
-
-
